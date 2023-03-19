@@ -1,0 +1,141 @@
+  .img-container {
+    width: 40%;
+    height: 70vh;
+  }
+
+  .product-img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    overflow-y: hidden;
+  }
+
+  .reviews {
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    width: 70%;
+    padding: 1vmax 0;
+   }
+  
+   .reviews > span {
+    font: 200 1.5vmax cursive;
+   }
+
+  .product_detail select{
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .minus, .plus {
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.6 );
+    border-radius: 10%;
+    margin: 0 5px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
+  }
+
+  .product_detail input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .product_detail input:focus {
+    outline: none;
+  }
+
+ .buy-btn, .submitreview-btn{
+  background-color: coral;
+  transition: 0.3s ease;
+
+ }
+ .submitreview-btn{
+  margin: 2rem 0;
+ }
+
+ .stockInfo {
+  margin-top: 15px;
+ }
+ .redColor {
+  color: red;
+ }
+ .greenColor {
+  color: green;
+ }
+
+ .outOfStockInfo{
+  color: red;
+ }
+
+ .submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+ 
+ .reviewHeading{
+  font-size: 2rem;
+  margin: 5rem 0 2rem 5rem;
+ }
+ .noReviews {
+  font-size: 1rem;
+  color: gray;
+  margin-left: 5rem;
+ }
+
+ /* Review Card */
+ .reviewCard {
+  margin: 2rem 5rem;
+ 
+}
+.review-profile, .review-comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.review-profile > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1%;
+}
+.review-profile > p {
+  margin-bottom: 0;
+  /* padding-bottom: 0; */
+}
+
+
+ @media only screen and (max-width: 991px) {
+  .img-container {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .product-img{
+    width: 100vw;
+    height: 70vh;
+    object-fit: fill;
+    overflow-y: hidden;
+  }
+  .reviewHeading{
+    font-size: 1.5rem;
+    margin: 5rem 0 2rem 1rem;
+   }
+   .reviewCard {
+    margin: 1rem 1rem;
+   
+  }
+ }
+

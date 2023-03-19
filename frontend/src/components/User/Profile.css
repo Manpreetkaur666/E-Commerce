@@ -1,0 +1,52 @@
+
+.profileHeading{
+  text-align: center;
+  padding: 1vmax;
+}
+.profileContainer{
+    width: 50vmax;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border: 0.1rem black;
+    box-shadow: 5.9px 11.8px 11.8px hsl(0deg 0% 0% / 0.32);
+}
+.profileIcon{
+    padding: 0.5vmax;
+}
+.profileIcon img {
+    margin: 1vmax;
+    border-radius: 100%;
+}
+
+.profileContainer a {
+    text-decoration: none;
+    color: black;
+    background-color: tomato;
+    font: 400 1vmax Roboto;
+    color: white;
+    padding: 0.5vmax;
+    width: 30%;
+    height: 10vmax;
+    margin: 4vmax;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.profileContainer a:hover{
+    background-color: rgb(204, 78, 56);
+    cursor: pointer;
+}
+
+.profileInfo div {
+    margin:1vmax;
+}
+
+.orderCheck{
+    margin: 1vmax;
+    color: black;
+}
+
+.update {
+    color: black;
+}

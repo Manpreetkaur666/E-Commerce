@@ -1,0 +1,14 @@
+.reviewsSection{
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reviewsSection div {
+    margin-right: 1rem;
+}
+
+.reviewsSection span{
+    font: 100 1.1vmax;
+    align-items: center;
+}

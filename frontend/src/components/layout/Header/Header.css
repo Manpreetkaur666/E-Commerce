@@ -1,0 +1,96 @@
+nav{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+.navbar-light .navbar-nav .nav-link{
+    padding: 15px 15px;
+    color: black;
+    transition: 0.3s ease;
+  }
+  
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i.active{
+    color: Orange;
+  
+  }
+
+.navbar-nav{
+  margin-right: 40px;
+}
+  
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: 0.3s, ease;
+  }
+  
+                                /* MOBILE NAV */
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+ #bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+  }
+  
+#bar:hover,
+#bar:active{
+    color: white;
+  }
+
+/* Profile Icon */
+.speedDial{
+    position: fixed;
+    right: 2.5vmax;
+    top: 1vmax;
+}
+.speedDialIcon{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.badge {
+  background-color: yellow;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+
+  
+                                /* FOR SMALL SCREEN SIZES */
+@media only screen and (max-width: 991px) {
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+      background-color: coral;
+    }
+  body > nav > div > button:hover #bar,
+  body > nav > div > button:focus #bar{
+      color: white;
+    }
+  
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    /* justify-content: center; */
+    align-items: flex-end;
+    text-align: right;
+    }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+      padding: 10px 0;
+    }
+  }
+
