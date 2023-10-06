@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Search from '../../Product/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
-import SearchIcon from '@mui/icons-material/Search';
-import UserOptions from './UserOptions';
+// import SearchIcon from '@mui/icons-material/Search';
+// import UserOptions from './UserOptions';
 import { loadUser } from '../../../actions/authAction';
 import { useSelector, useDispatch } from 'react-redux';
 import store from './../../../store'
@@ -41,7 +41,7 @@ export const Header = () => {
         
         <nav className="navbar navbar-expand-lg navbar-light bg-white">
             <div className="container">
-                <a className="navbar-brand" to="#">
+                <a className="navbar-brand" href="#">
                     <img className="logo" src="/images/logo/logo.png" alt="" />
                 </a>
                 <div>
