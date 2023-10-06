@@ -1,5 +1,6 @@
 const app = require("./backend/app");
 const express = require('express');
+const app = express();
 const path = require('path');
 require('dotenv').config({ path: 'backend/config/config.env' })
 const cloudinary = require("cloudinary")
