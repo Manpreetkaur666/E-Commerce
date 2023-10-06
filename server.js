@@ -1,9 +1,9 @@
-const app = require("./app");
+const app = require("./backend/app");
 const express = require('express');
 const path = require('path');
 require('dotenv').config({ path: 'backend/config/config.env' })
 const cloudinary = require("cloudinary")
-const connectToMongo = require('./db');
+const connectToMongo = require('./backend/db');
 app.use(express.static(path.join(__dirname, 'build')));
 
 //handling uncaught -- if by mistake type something that does not exist -- should be defined on top
@@ -13,10 +13,10 @@ process.on('uncaughtException', (err) => {
     process.exit(1)
 });
 
-app.use(express.static(path.join(__dirname, '../frontend/build')))
+app.use(express.static(path.join(__dirname, '/frontend/build')))
 app.get('/*', (req, res) => {
     res.cookie('token');
-    res.sendFile(path.join(__dirname, '../frontend/build/index.html'),
+    res.sendFile(path.join(__dirname, '/frontend/build/index.html'),
         // res.sendFile(path.join(__dirname, './frontend/build', 'index.html'),
         function (err) {
             res.status(500).send(err)
