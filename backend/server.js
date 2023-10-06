@@ -14,14 +14,14 @@ process.on('uncaughtException', (err) => {
 });
 
 app.use(express.static(path.join(__dirname, '../frontend/build')))
-// app.get('/*', (req, res) => {
-//     res.cookie('token');
-//     res.sendFile(path.join(__dirname, '../frontend/build/index.html'),
-//         // res.sendFile(path.join(__dirname, './frontend/build', 'index.html'),
-//         function (err) {
-//             res.status(500).send(err)
-//         });
-// });
+app.get('/*', (req, res) => {
+    res.cookie('token');
+    res.sendFile(path.join(__dirname, '../frontend/build/index.html'),
+        // res.sendFile(path.join(__dirname, './frontend/build', 'index.html'),
+        function (err) {
+            res.status(500).send(err)
+        });
+});
 
 //connectiong to database
 connectToMongo();
