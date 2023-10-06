@@ -1,10 +1,11 @@
 const app = require("./backend/app");
 const express = require('express');
-const app = express();
 const path = require('path');
 require('dotenv').config({ path: 'backend/config/config.env' })
 const cloudinary = require("cloudinary")
 const connectToMongo = require('./backend/db');
+
+
 app.use(express.static(path.join(__dirname, 'build')));
 
 //handling uncaught -- if by mistake type something that does not exist -- should be defined on top
@@ -27,10 +28,10 @@ app.get('/*', (req, res) => {
 //connectiong to database
 connectToMongo();
 
-// let port = process.env.PORT;
-// if (port == null || port == "") {
-//   port = 3000;
-// }
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4000;
+}
 
 // connectToMongo().then(() => {
 //   app.listen(port, () => {
